@@ -411,9 +411,8 @@
   border-radius: 50%;
   position: absolute;
   z-index: -1;
-  display: flex;
-  margin-top: -221px;
-  margin-left: -171px;
+  top: -121px;
+  left: -91px;
 }
 
 .footer {
