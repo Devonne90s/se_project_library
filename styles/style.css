@@ -1,7 +1,7 @@
 .page {
   min-width: 1100px;
   max-width: 1600px;
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   margin: 0 auto;
@@ -16,6 +16,7 @@
   padding-right: 80px;
   position: relative;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .nav {
@@ -32,6 +33,7 @@
 .nav__links {
   display: flex;
   margin-top: 8px;
+  margin-bottom: 8px;
   column-gap: 20px;
   list-style-type: none;
   padding: 0;
@@ -63,6 +65,7 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .header__image {
@@ -70,7 +73,7 @@
   max-width: 636px;
   top: 135px;
   right: 20px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header__footer {
@@ -271,6 +274,7 @@
   margin-top: 68px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -341,8 +345,9 @@
 }
 
 .step {
-  width: 220px;
-  flex-basis: auto;
+  flex-basis: 220px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .step__title {
